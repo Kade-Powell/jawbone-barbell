@@ -335,9 +335,9 @@ export default {
     // Delete exercise
     const deleteExercise = (id) => {
       if (data.value.exercises.length > 1) {
-        data.value.exercises = data.value.exercises.filter((exercise) => {
-          exercise.id !== id
-        })
+        data.value.exercises = data.value.exercises.filter(
+          (exercise) => exercise.id !== id
+        )
       } else if (data.value.exercises.length <= 1) {
         errorMsg.value =
           'Error: Cannot remove, need to have at least one exercise'
